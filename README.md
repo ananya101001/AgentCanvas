@@ -13,7 +13,7 @@ This project was built to demonstrate real-world AI engineering concepts: state 
 
 ## Architecture
 
-![Architecture Diagram](assets/architecture.png)
+![Architecture Diagram](output/architecture.png)
 
 AgentCanvas uses a **hybrid orchestration model**:
 
