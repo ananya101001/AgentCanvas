@@ -59,8 +59,8 @@ Use purple color theme. CTA says "Start Free Trial".
 
 **Output:**
 
-![Hero Section](assets/output_hero.png)
-![Testimonial Section](assets/output_testimonial.png)
+![Hero Section](output/output1.png)
+![Testimonial Section](output/output2.png)
 
 ---
 
