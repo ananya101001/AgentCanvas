@@ -150,7 +150,7 @@ A landing page for an online yoga studio called ZenFlow. Use green color theme.
 
 Read the full deep-dive article explaining the architecture, design decisions, and lessons learned:
 
-[How I Built AgentCanvas: Autonomous Landing Pages with Multi-Agent AI](https://medium.com/yourusername)
+[How I Built AgentCanvas: Autonomous Landing Pages with Multi-Agent AI](https://medium.com/@ananyapraveen.shetty/how-i-built-agentcanvas-an-autonomous-landing-page-generator-using-gpt-crewai-langgraph-b3c06444c674)
 
 ---
 
