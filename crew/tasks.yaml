@@ -1,0 +1,47 @@
+planning_task:
+  description: >
+    Analyze this user request: "{user_prompt}"
+    Design a complete landing page wireframe with compelling marketing copy.
+    You MUST return a valid JSON object matching the WireframeAndCopy schema exactly.
+    Choose a color_theme that fits the brand (e.g. rose, blue, green, purple, amber).
+  expected_output: >
+    A valid JSON object with keys: brand_name, color_theme, hero (headline,
+    subheadline, cta_button_text), features (list of 3 with title and description),
+    testimonial_quote, testimonial_author.
+
+development_task:
+  description: >
+    You are given a wireframe JSON object with all the real content already filled in.
+    Your job is to write a complete HTML page using ONLY the actual values from the JSON.
+    
+    Here is the wireframe data: {wireframe_and_copy}
+    
+    QA feedback to fix (if any): {qa_feedback}
+    
+    CRITICAL RULES:
+    - DO NOT use any template syntax like {{{{ }}}} or {{% %}}
+    - DO NOT use placeholder variable names like brand_name or hero.headline
+    - EXTRACT the actual text values from the JSON and hardcode them directly into the HTML
+    - For example if brand_name is "NeuralDesk", write NeuralDesk directly in the HTML
+    - If headline is "AI Support Tool", write that exact text in the HTML
+    - Use Tailwind CSS CDN for styling
+    - Sections in order: Hero, Features (3 cards), Testimonial, Footer
+    - Must be fully responsive using Tailwind md: and lg: prefixes
+    - Output ONLY raw HTML starting with <!DOCTYPE html>. Nothing else.
+  expected_output: >
+    A complete valid HTML5 document with all real content hardcoded directly.
+    No placeholders, no template syntax, no variable names visible anywhere.
+    Starts with <!DOCTYPE html> and nothing else before it.
+qa_task:
+  description: >
+    Review this HTML code carefully: "{raw_code}"
+    Check for:
+    1. Missing or unclosed HTML tags
+    2. Invalid or misspelled Tailwind CSS classes
+    3. Missing Tailwind CDN script in the head
+    4. Poor mobile responsiveness (missing responsive classes)
+    5. Missing sections (Hero, Features, Testimonial, Footer)
+    If everything is correct, output exactly: PASS
+    If there are issues, output a numbered list of specific bugs only.
+  expected_output: >
+    Either the single word PASS, or a numbered list of bugs to fix.
