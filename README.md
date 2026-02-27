@@ -1,4 +1,4 @@
-#  AgentCanvas — Autonomous AI Landing Page Generator
+#  AgentCanvas : Autonomous AI Landing Page Generator
 
 > Type a business idea. Get a production-ready landing page. No code. No design. No human intervention.
 
