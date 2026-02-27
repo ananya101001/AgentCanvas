@@ -33,7 +33,7 @@ AgentCanvas uses a **hybrid orchestration model**:
 Dev writes code → QA reviews → Bugs found?
   YES + iteration < 3  →  Send back to Dev with bug list
   YES + iteration = 3  →  Save best version + log warning  
-  NO (PASS)            →  Save final page ✅
+  NO (PASS)            →  Save final page 
 ```
 
 ---
